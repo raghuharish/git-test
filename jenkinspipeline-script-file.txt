@@ -1,27 +1,28 @@
 node {
-      
-	for (i=0; i<2; i++) { 
-           
-		stage "Stage #"+i
-           
-		print 'Hello, world !'
-          
+	for (i=0; i<2; i++) {
+		
+		stage "stage #"+i
+
+		print 'hello, world |'
+
 		if (i==0)
-           
+
 		{
-               
-			echo 'Running on Stage #0'
-          
-		 }
-           
-		else {
-               
-			build 'JenkinsPipeline'
-              
-			 echo 'Running on Stage #1'
-           
+			
+			echo 'Running on stage #0'
+
 		}
-      
+		
+		else {
+		
+			build 'jenkinspipeline'
+	
+			  echo 'Runnimg on stage #1'
+
+		}
+
 	}
 
 }
+
+		
